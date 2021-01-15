@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DISEÑO RESPONSIVO</title>
+
+    <link rel="stylesheet" type="text/css" href="css/estilos-2.8.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <header class="morado">
+        <h1>PROYECTO PRÁCTICO</h1>
+        <nav>
+          <div class="icon"><i class="barras"></i></div>
+          <div class="enrutadores">INICIO</div>
+          <div class="enrutadores">NOSOTROS</div>
+          <div class="enrutadores">CONTACTANOS</div>
+        </nav>
+      </header>
+      <main>
+        <section class="texto">
+          <div>
+            <h3>LAS MEJORES ARMAS</h3>
+            <h1 class="morado">HISTORIA</h1>
+          </div>
+          <div>
+            <p>
+              Página realizada por @Nonander21 para Jaime Canillas Galiano
+              para el curso de "Diseño responsivo"
+            </p>
+            <p>
+              La Segunda Enmienda a la Constitución de los Estados Unidos de América (o Enmienda II) 
+              protege el derecho del pueblo estadounidense a poseer y portar armas.
+              Así, Estados Unidos es uno de los países con menores limitaciones para adquirir y portar armas de fuego. 
+            </p>
+            <p>
+              El derecho a la posesión de armas consiste en el derecho a la tenencia, uso y transporte de armas, 
+              con fines como legítima defensa, deportivos, cinegéticos (como medio de supervivencia o deporte), 
+              escolta privada o de otra naturaleza, sin perjuicio de otras actividades legales que pudieran realizarse con las mismas.
+            </p>
+          </div>
+        </section>
+        <section class="images">
+          <img src="img/ak-47.jpg" /> <img src="img/deagle.jpg" />
+          <img src="img/tommyggun.jpg" /> <img src="img/glock.jpg" />
+          <img src="img/five-sevena.jpg" /> <img src="img/ump45.jpg" />
+          <img src="img/l96.jpg" /> <img class="hidden" src="img/mp7.jpg" />
+          <img src="img/mp9.jpg" />
+        </section>
+      </main>
+      <section class="armas">
+        <h2 class="morado">ARMAS</h2>
+        <article>
+          <h4 >FUSIL DE ASALTO</h3>
+          <h3 class="morado">AK-47</h3>
+          <p>
+            El Avtomat Kalashnikova modelo 1947 o más conocido por el acrónimo AK-47 es un fusil de asalto soviético, 
+            de calibre 7,62 mm, diseñado por Mijaíl Kaláshnikov, combatiente soviético durante la Segunda Guerra Mundial. 
+            Fue el fusil oficial de la Unión Soviética entre 1951 y 1978
+          </p>
+        </article>
+        <article>
+          <h4>PISTOLA SEMOAUTOMÁTICA</h>
+          <h3 class="morado">DESERT-EAGLE</h3>
+          <p>
+            La Desert Eagle es una pistola semiautomática de grueso calibre accionada por los gases del disparo, 
+            diseñada por la firma estadounidense Magnum Research y fabricada principalmente en Israel por IMI, 
+            ahora Israel Weapons Industry
+          </p>
+        </article>
+        <article>
+          <h4>FRANCOTIRADOR</h4>
+          <h3 class="morado">L96</h3>
+          <p>
+            El Accuracy International Arctic Warfare es un fusil de francotirador diseñado y fabricado por la compañía británica Accuracy International.
+            Se ha hecho popular como fusil de caza, de policía y militar desde su introducción en la década de 1980
+        </article>
+      </section>
+    </div>
+    <script>
+        $(function() {
+            $(".icono").click(function() {
+            $(".enrutadores").toggle();
+            });
+            $(window).resize(function() {
+            var anchura = $(this).width();
+            if (anchura > 576) {
+                $(".enrutadores").show();
+            }
+            });
+        });
+    </script>
+  </body>
+</html>
